@@ -43,6 +43,7 @@ def onClick(widget,allButtons,mlist):
 	if(allButtons[key]['img']!='null'):
 		global temp
 		temp=allButtons[key]['img']
+		allButtons[key]['img']='null'
 		mlist[p][q].configure(image='',height=6,width=12)
 
 def handler(event):
